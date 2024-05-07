@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    height: 60vh; /* 70% of viewport height */
+    background-image: url(Water.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Add margin to separate the product image */
+}
+
+.Logo {
+    width: 15%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.brand-info {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-family: 'Open Sauce One', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.components {
+    font-size: 20px;
+    font-family: 'Open Sauce One', sans-serif;
+    font-weight: 900;
+    color: white;
+    margin-left: 20px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.product-image {
+    width: 10%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.desc {
+    font-size: 15px;
+    font-family: 'Open Sauce One', sans-serif;
+    color: white;
+    text-align: justify;
+    margin-left: 20px; /* Adjust margin as needed */
+    max-width: 30%;
+}
+
+.bottom-container {
+    height: 40vh; /* 30% of viewport height */
+    background-color: #e3e3e3; /* Example background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top of the container */
+    align-items: center; /* Align items to the center horizontally */
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.bottom-container p {
+    margin: 0;
+    font-size: 20px;
+    max-width: 50%; /* Limit the width of the text */
+    text-align: center; /* Center the text horizontally */
+}
+
+.contact {
+    align-self: flex-start; /* Align the "Contact" text to the bottom left of the container */
+    font-size: 16px; /* Adjust font size */
+}
+
+.contact p {
+    margin: 5px 0; /* Add some margin between each line of contact information */
+}
+
+/* Align Mission and Vision horizontally centered */
+.bottom-container p:nth-child(1),
+.bottom-container p:nth-child(2) {
+    align-self: center;
+}
+
+.bottom-logo {
+    position: absolute; /* Position the logo absolutely */
+    height: 15%;
+    width: auto;
+    bottom: 10px; /* Set distance from the bottom */
+    right: 50px; /* Set distance from the right */
+}
