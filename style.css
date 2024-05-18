@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .background-container {
@@ -102,8 +103,21 @@ body {
     right: 50px;
 }
 
-/* Media query for tablets and below */
+/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .background-container {
+        height: auto;
+        background-image: url(Water.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; /* Cover the entire container */
+        background-position: center;
+    }
+
     .logo-container {
         flex-direction: column;
         align-items: center;
@@ -111,13 +125,19 @@ body {
     }
 
     .Logo {
-        width: 30%;
-        margin-bottom: 10px;
+        width: 35%;
+        margin: 10px 0;
     }
 
-    .brand-name, .components {
-        font-size: 16px;
-        margin-left: 0;
+    .brand-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-name {
+        font-size: 18px;
+        margin: 10px 0;
+        color: rgb(255, 255, 255);
     }
 
     .product-info {
@@ -128,63 +148,76 @@ body {
     }
 
     .product-image {
-        width: 50%;
+        max-width: 100%;
+        height: auto;
         margin: 10px 0;
     }
 
     .desc {
         font-size: 14px;
-        margin: 10px;
+        margin: 10px 0;
+        color: black;
         max-width: 90%;
+        text-align: center;
+        margin-left: 30px;
     }
 
     .bottom-container {
+        height: auto;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
     }
 
     .bottom-container p {
         font-size: 16px;
         max-width: 90%;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 10px;
     }
 
     .contact {
         align-self: center;
         text-align: center;
         font-size: 14px;
+        max-width: 90%;
     }
 
     .bottom-logo {
         position: relative;
-        margin-top: 20px;
+        margin: 20px 0;
+        height: 5%;
+        width: auto;
         right: auto;
         bottom: auto;
-        height: 10%;
     }
-}
 
-/* Media query for mobile phones */
-@media screen and (max-width: 480px) {
-    .brand-name, .components {
-        font-size: 14px;
+    .logo-container, .brand-info, .components, .product-info, .bottom-container {
+        width: 100%;
+    }
+
+    /* Ensuring correct order */
+    .logo-container, .brand-info, .desc, .product-info, .bottom-container, .bottom-logo {
+        display: block;
     }
 
     .desc {
-        font-size: 12px;
-        margin: 5px;
-        max-width: 95%;
+        order: 1;
     }
 
-    .bottom-container p {
-        font-size: 14px;
-        max-width: 95%;
+    .product-image {
+        order: 2;
     }
 
-    .contact {
-        font-size: 12px;
-        max-width: 95%;
+    .bottom-container {
+        order: 3;
     }
 
     .bottom-logo {
-        height: 8%;
+        order: 4;
     }
 }
