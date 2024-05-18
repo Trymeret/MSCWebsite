@@ -108,7 +108,6 @@ body {
 
     body {
         overflow-x: hidden; /* Prevent horizontal scrolling */
-        margin: 0;
     }
 
     .background-container {
@@ -117,6 +116,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover; /* Cover the entire container */
         background-position: center;
+        overflow-x: hidden;
     }
 
     .logo-container {
@@ -150,6 +150,7 @@ body {
 
     .product-image {
         max-width: 100%;
+        width: 30%;
         height: auto;
         margin: 10px 0;
     }
