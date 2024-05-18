@@ -108,6 +108,7 @@ body {
 
     body {
         overflow-x: hidden; /* Prevent horizontal scrolling */
+        margin: 0;
     }
 
     .background-container {
@@ -125,7 +126,7 @@ body {
     }
 
     .Logo {
-        width: 35%;
+        width: 40%;
         margin: 10px 0;
     }
 
@@ -177,11 +178,13 @@ body {
         max-width: 90%;
         text-align: center;
         margin-bottom: 10px;
+        text-align: justify;
     }
 
     .contact {
         align-self: center;
         text-align: center;
+        text-align: justify;
         font-size: 14px;
         max-width: 90%;
     }
@@ -193,7 +196,7 @@ body {
         width: auto;
         right: auto;
         bottom: auto;
-        max-width: 280px;
+        max-width: 350px;
     }
 
     .logo-container, .brand-info, .components, .product-info, .bottom-container {
