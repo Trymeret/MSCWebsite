@@ -107,7 +107,7 @@ body {
 @media screen and (max-width: 768px) {
 
     body {
-        overflow-x: hidden;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .background-container {
@@ -187,12 +187,12 @@ body {
     }
 
     .bottom-logo {
-        position: absolute;
+        position: relative;
         margin: 20px 0;
-        width: 50%;
-        right: 50%;
-        bottom: 10px;
-        transform: translateX(50%);
+        height: 1%;
+        width: auto;
+        right: auto;
+        bottom: auto;
     }
 
     .logo-container, .brand-info, .components, .product-info, .bottom-container {
