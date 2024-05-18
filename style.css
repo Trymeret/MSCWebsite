@@ -189,11 +189,12 @@ body {
     .bottom-logo {
         position: relative;
         margin: 20px 0;
-        height: 10%;
+        height: 5%;
         width: auto;
         right: auto;
         bottom: auto;
-        max-width: 80px;
+        max-width: 650px;
+        text-align: center;
     }
 
     .logo-container, .brand-info, .components, .product-info, .bottom-container {
